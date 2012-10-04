@@ -100,16 +100,14 @@ Attributes:
 
 Sometimes, you might wish to add your own styles to a timer element rather than
 using those provided by Harvest.  In order to signal to the Harvest Platform
-that styling should be skipped, you need only to add the `data-skip-styling`
-attribute to a timer element.
+that styling should be skipped, you need only to set the `skipStyling`
+attribute to `true` within the configuration block.
 
-```html
-<div class="harvest-timer" 
-  data-account='{"id":42"}'
-  data-project='{"id":42,"name":"Harvest Platform"}'
-  data-item='{"id":1337,"name":"Write documentation"}'
-  data-skip-styling='true'>
-</div>
+```js
+window._harvestPlatformConfig = {
+  "applicationName": "Skipping the Style",
+  "skipStyling": true
+};
 ```
 
 ## Events
