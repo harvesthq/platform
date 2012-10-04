@@ -44,7 +44,7 @@ list.
 
 	<div class="harvest-timer"></div>
 	
-You need to add some [data attributes](#dataattributes) to get things fully
+You need to add some [data attributes](#data-attributes) to get things fully
 working, though.
 
 ### Data attributes
