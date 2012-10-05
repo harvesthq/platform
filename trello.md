@@ -58,20 +58,6 @@ $(".harvest-timer")
   });
 ```
 
-The platform will poll Harvest for the running timer and subsequently append
-the `running` class to any button associated with that timer. The UI can poll
-for the timer with that class and style its icon accordingly.
-
-```js
-setInterval(function() {
-  if ($(".js-add-trello-timer").hasClass("running")) {
-    $(".trello-timer-icon").addClass("running");
-  else {
-    $(".trello-timer-icon").removeClass("running");
-  }
-}, 500);
-```
-
 ### 3. Load supporting CSS
 
 The following styles should be loaded on pages where the "Track time..." buttons are used. 
