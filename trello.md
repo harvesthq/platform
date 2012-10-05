@@ -7,7 +7,7 @@ for the end-user. A Trello user will be able to track time to a Trello card.
 * Watch a demo (enabled via a custom Chrome Extension to simulate the front-end integration): http://www.youtube.com/watch?v=3XvwvhWirU0
 * You can also create a free trial for testing: https://www.getharvest.com/signup
 
-Completing the integration a matter of 2 simple steps. 
+Completing the integration a matter of 3 simple steps. 
 
 ### 1. Include the Harvest Platform JS Block
 
@@ -71,6 +71,10 @@ setInterval(function() {
   }
 }, 500);
 ```
+
+### 3. Supporting CSS
+
+The following styles should be loaded on pages where the "Track time..." buttons are used. 
 
 The button itself is styled differently when its timer is running. This style
 matches the one Trello uses for `mouseenter` events.
