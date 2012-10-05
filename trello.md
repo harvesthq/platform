@@ -1,9 +1,17 @@
 # Harvest and Trello Integration
 
-### Including the Harvest Platform
+The Harvest platform enables any web developer to bring time tracking into their application in less than an hour. 
+The completed integration is not only easy to implement, it achieves a very seamless integration experience 
+for the end-user. A Trello user will be able to track time to a Trello card. 
+
+Watch a demo (enabled via a custom Chrome Extension to simulate the front-end integration): http://www.youtube.com/watch?v=3XvwvhWirU0
+
+Completing the integration a matter of 2 simple steps. 
+
+### 1. Include the Harvest Platform JS Block
 
 Loading the platform requires that the following block and configuration be
-specified.
+specified. Note that we've set two key variables to for Trello, namely "applicationName" and "permalink" (which enables Harvest to link back to Trello)
 
 ```html
 <script>
@@ -22,9 +30,9 @@ specified.
 </script>
 ```
 
-### Adding a Harvest timer to a Trello todo
+### 2. Add a Harvest "Track time..." button to the Trello card
 
-The Harvest timer is currently rendered in the Actions list. Natively, this can
+The Harvest timer is likely best rendered in the Actions list. This can
 be accomplished by adding the following markup to the list.
 
 ```html
