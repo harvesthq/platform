@@ -7,7 +7,7 @@ for the end-user. A Trello user will be able to track time to a Trello card.
 * Watch a demo: http://www.youtube.com/watch?v=3XvwvhWirU0
 * You can also create a free Harvest trial for testing: https://www.getharvest.com/signup
 
-Completing the integration a matter of 3 simple steps. 
+Integrating requires just 3 simple steps.
 
 ### 1. Include the Harvest Platform JS Block
 
