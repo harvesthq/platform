@@ -4,7 +4,8 @@ The Harvest platform enables any web developer to bring time tracking into their
 The completed integration is not only easy to implement, it achieves a very seamless integration experience 
 for the end-user. A Trello user will be able to track time to a Trello card. 
 
-Watch a demo (enabled via a custom Chrome Extension to simulate the front-end integration): http://www.youtube.com/watch?v=3XvwvhWirU0
+* Watch a demo (enabled via a custom Chrome Extension to simulate the front-end integration): http://www.youtube.com/watch?v=3XvwvhWirU0
+* You can also create a free trial for testing: https://www.getharvest.com/signup
 
 Completing the integration a matter of 2 simple steps. 
 
