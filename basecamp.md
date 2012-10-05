@@ -4,9 +4,6 @@ The Harvest platform enables any web developer to bring time tracking into their
 The completed integration is not only easy to implement, it achieves a very seamless integration experience 
 for the end-user. A Basecamp user will be able to track time to a Basecamp todo. 
 
-* Watch a demo: http://www.youtube.com/watch?v=3XvwvhWirU0
-* You can also create a free Harvest trial for testing: https://www.getharvest.com/signup
-
 Integrating requires just 3 simple steps.
 
 ### 1. Include the Harvest Platform JS Block
