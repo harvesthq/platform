@@ -17,7 +17,7 @@ Here's what the include tag should look like. The
       "permalink": "http://example.com/projects/%PROJECT_ID%/items/%ITEM_ID%",
     };
     var s = document.createElement('script');
-    s.src = '//platform.harvestapp.com/javascripts/generated/platform.js';
+    s.src = 'https://platform.harvestapp.com/javascripts/generated/platform.js';
     s.async = true;
     var ph = document.getElementsByTagName('script')[0];
     ph.parentNode.insertBefore(s, ph);
