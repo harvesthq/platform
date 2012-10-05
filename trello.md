@@ -72,7 +72,7 @@ setInterval(function() {
 }, 500);
 ```
 
-### 3. Supporting CSS
+### 3. Load supporting CSS
 
 The following styles should be loaded on pages where the "Track time..." buttons are used. 
 
