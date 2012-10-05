@@ -25,24 +25,17 @@ specified.
 ### Adding a Harvest timer to a Trello todo
 
 The Harvest timer is currently rendered in the Actions list. Natively, this can
-be accomplished by adding the following markup to the list.
+be accomplished by adding the following markup to the list. Additionally, each
+timer element should contain `data-project` and `data-item` elements. These
+contain JSON strings representing board and card data.
 
 ```html
-<a class="harvest-timer button-link js-add-trello-timer">
+<a class="harvest-timer button-link js-add-trello-timer"
+  data-project='{"id": boardId, "name": boardName}'
+  data-item='{"id": cardId, "name": cardDescription}'>
   <span class="trello-timer-icon"></span>
   Track time...
 </a>
-```
-
-Additionally, each timer element should contain `data-project` and `data-item`
-elements. These contain JSON strings representing board and card data.
-
-```html
-<a class="harvest-timer" 
-  data-project='{"id": boardId, "name": boardName}'
-  data-item='{"id": cardId, "name": cardDescription}'>
-</a>
-
 ```
 
 While Trello natively handles hover events on the button, it is unaware of the
