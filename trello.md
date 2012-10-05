@@ -20,7 +20,7 @@ specified. Note that we've set two key variables to for Trello, namely "applicat
     window._harvestPlatformConfig = {
       "applicationName": "Trello",
       "permalink": "https://trello.com/card/%PROJECT_ID%/%ITEM_ID%",
-      "skipStyling": true,
+      "skipStyling": true
     };
     var s = document.createElement("script");
     s.src = "https://platform.harvestapp.com/javascripts/generated/platform.js";
