@@ -33,7 +33,7 @@ Options:
   Harvest to identify the link between Harvest project and your app. *Example:
   "MyTodoApp"*
 - **permalink** (string): The permalink structure used for your
-  app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, and `%ITEM_ID%`). *Example: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`*
+  app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, and `%ITEM_ID%`). **Example**: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`
 
 ## HTML
 
