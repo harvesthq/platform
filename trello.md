@@ -45,19 +45,6 @@ be accomplished by adding the following markup to the list.
 </a>
 ```
 
-While Trello natively handles hover events on the button, it is unaware of the
-timer icon. It can be restyled by adding the `hover` class.
-
-```js
-$(".harvest-timer")
-  .on("mouseenter", function() {
-    $(".trello-timer-icon").addClass("hover")
-  })
-  .on("mouseleave", function() {
-    $(".trello-timer-icon").removeClass("hover")
-  });
-```
-
 ### 3. Load supporting CSS
 
 The following styles should be loaded on pages where the "Track time..." buttons are used. 
