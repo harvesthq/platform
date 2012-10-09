@@ -15,14 +15,6 @@ $(function(){
     // Default attributes for the todo item.
     defaults: function() {
       return {
-        projectData: {
-          id: 1,
-          name: 'Harvest Integration'
-        },
-        itemData: {
-          id: (new Date()).getTime(),
-          name: ''
-        },
         title: "empty todo...",
         order: Todos.nextOrder(),
         done: false
@@ -114,18 +106,9 @@ $(function(){
 
     // Re-render the titles of the todo item.
     render: function() {
-      this.model.attributes.itemData.name = this.model.get('title');
-
       this.$el.html(this.template(this.model.toJSON()));
       this.$el.toggleClass('done', this.model.get('done'));
       this.input = this.$('.edit');
-
-      var harvestEvent = {
-        type: 'harvest-event:timers:add',
-        element: this.$el.find('.harvest-timer').get(0)
-      }
-
-      $("#harvest-messaging").trigger(harvestEvent);
 
       return this;
     },

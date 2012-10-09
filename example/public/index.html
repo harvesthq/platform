@@ -52,7 +52,6 @@
   <script type="text/template" id="item-template">
     <div class="view">
       <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
-      <div class="harvest-timer" data-project="<%- JSON.stringify(projectData) %>" data-item="<%- JSON.stringify(itemData) %>"></div>
       <label><%- title %></label>
       <a class="destroy"></a>
     </div>
@@ -64,19 +63,6 @@
       <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
     <% } %>
     <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
-  </script>
-
-  <script>
-    (function() {
-      window._harvestPlatformConfig = {
-        "applicationName": "Backbone.js Todos"
-      };
-      var platform = document.createElement('script');
-      platform.src = '//platform.harvestapp.com/assets/platform.js';
-      platform.async = true;
-      var script = document.getElementsByTagName('script')[0];
-      script.parentNode.insertBefore(platform, script);
-    })();
   </script>
 
   </body>
