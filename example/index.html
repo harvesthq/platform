@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Backbone.js Todos</title>
-  <link rel="stylesheet" href="todos.css"/>
+  <link rel="stylesheet" href="stylesheets/todos.css"/>
 </head>
 
 <body>
@@ -40,18 +40,19 @@
     <br />Rewritten by: <a href="http://addyosmani.github.com/todomvc">TodoMVC</a>.
   </div>
 
-  <script src="vendor/json2.js"></script>
-  <script src="vendor/jquery-1.7.1.js"></script>
-  <script src="vendor/underscore.js"></script>
-  <script src="backbone.js"></script>
-  <script src="backbone-localstorage.js"></script>
-  <script src="todos.js"></script>
+  <script src="/vendor/json2.js"></script>
+  <script src="/vendor/jquery-1.7.1.js"></script>
+  <script src="/vendor/underscore.js"></script>
+  <script src="/javascripts/backbone.js"></script>
+  <script src="/javascripts/backbone-localstorage.js"></script>
+  <script src="/javascripts/todos.js"></script>
 
   <!-- Templates -->
 
   <script type="text/template" id="item-template">
     <div class="view">
       <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+      <div class="harvest-timer" data-project="<%- JSON.stringify(projectData) %>" data-item="<%- JSON.stringify(itemData) %>"></div>
       <label><%- title %></label>
       <a class="destroy"></a>
     </div>
@@ -63,6 +64,20 @@
       <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
     <% } %>
     <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
+  </script>
+
+  <script>
+    (function() {
+      window._harvestPlatformConfig = {
+        "applicationName": "Backbone.js Todos",
+        "debug": true
+      };
+      var platform = document.createElement('script');
+      platform.src = 'http://platform.harvestapp.dev/javascripts/generated/platform.js';
+      platform.async = true;
+      var script = document.getElementsByTagName('script')[0];
+      script.parentNode.insertBefore(platform, script);
+    })();
   </script>
 
   </body>
