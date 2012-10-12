@@ -14,7 +14,7 @@ Here's what the include tag should look like. The
   (function() {
     window._harvestPlatformConfig = {
       "applicationName": "Example App",
-      "permalink": "http://example.com/projects/%PROJECT_ID%/items/%ITEM_ID%",
+      "permalink": "http://example.com/projects/%PROJECT_ID%/items/%ITEM_ID%"
     };
     var s = document.createElement('script');
     s.src = 'https://platform.harvestapp.com/javascripts/generated/platform.js';
