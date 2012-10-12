@@ -29,11 +29,14 @@ Here's what the include tag should look like. The
 
 Options:
 
-- **applicationName** (string): The name of your app. This will be displayed in
+- **applicationName** _(string, required)_: The name of your app. This will be displayed in
   Harvest to identify the link between Harvest project and your app. *Example:
   "MyTodoApp"*
-- **permalink** (string): The permalink structure used for your
+
+- **permalink** _(string, required)_: The permalink structure used for your
   app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, and `%ITEM_ID%`). **Example**: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`
+
+- **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided CSS for the timer elements. Set this to `true` to signal to the Harvest Platform that styling should be skipped. The default value is `false`.
 
 ## HTML
 
@@ -95,20 +98,6 @@ Attributes:
   maxlength of 255)
 - **name (string)**: the name of the item. Can by any string (with a maxlength
   of 255)
-
-### Custom CSS
-
-Sometimes, you might wish to add your own styles to a timer element rather than
-using those provided by Harvest.  In order to signal to the Harvest Platform
-that styling should be skipped, you need only to set the `skipStyling`
-attribute to `true` within the configuration block.
-
-```js
-window._harvestPlatformConfig = {
-  "applicationName": "Skipping the Style",
-  "skipStyling": true
-};
-```
 
 ## Events
 
