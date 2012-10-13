@@ -25,6 +25,10 @@ Here's what the include tag should look like. The
 </script>
 ```
 
+**Note:** If you'd like to review the code used for the Harvest Platform before including
+it on your page, you can reference the original file
+[here](https://platform.harvestapp.com/javascripts/generated/platform.js).
+
 ### Configuration
 
 Options:
