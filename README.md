@@ -33,14 +33,20 @@ original file [here](https://platform.harvestapp.com/javascripts/generated/platf
 
 Options:
 
-- **applicationName** _(string, required)_: The name of your app. This will be displayed in
-  Harvest to identify the link between Harvest project and your app. *Example:
-  "MyTodoApp"*
+- **applicationName** _(string, required)_: The name of your app. This will be 
+  displayed in Harvest to identify the link between Harvest project and your app. 
+  
+    _Example_: "MyTodoApp"
 
 - **permalink** _(string, required)_: The permalink structure used for your
-  app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, and `%ITEM_ID%`). **Example**: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`
+  app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, 
+  and `%ITEM_ID%`). 
 
-- **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided CSS for the timer elements. Set this to `true` to signal to the Harvest Platform that styling should be skipped. The default value is `false`.
+    _Example_: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`
+
+- **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided 
+CSS for the timer elements. Set this to `true` to signal to the Harvest Platform 
+that styling should be skipped. The default value is `false`.
 
 ## HTML
 
@@ -77,7 +83,8 @@ projects exist within the context of an account.
 
 Attributes:
 
-- **id (string)**: the unique ID associated with a specific user. Used for URL subsitution.
+- **id (string)**: the unique ID associated with a specific user. Used for URL 
+subsitution.
 
 #### data-project
 
@@ -86,9 +93,9 @@ particular timer.
 
 Attributes:
 
-- **id (string)**: the unique ID of the project. Can by any string (with a
+- **id (string)**: the unique ID of the project. Can be any string (with a
   maxlength of 255)
-- **name (string)**: the name of the project. Can by any string (with a
+- **name (string)**: the name of the project. Can be any string (with a
   maxlength of 255)
 
 #### data-item
@@ -98,9 +105,9 @@ particular timer.
 
 Attributes:
 
-- **id (string)**: the unique ID of the item. Can by any string (with a
+- **id (string)**: the unique ID of the item. Can be any string (with a
   maxlength of 255)
-- **name (string)**: the name of the item. Can by any string (with a maxlength
+- **name (string)**: the name of the item. Can be any string (with a maxlength
   of 255)
 
 ## Events
