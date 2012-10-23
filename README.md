@@ -1,5 +1,54 @@
 # Platform Documentation
 
+## JavaScript include tag
+
+The first step to integrating Harvest time tracking into your app involves
+placing our JavaScript include tag into your HTML. The best placement for this
+is right at the bottom of your document, just before the closing `</body>` tag.
+
+Here's what the include tag should look like. The
+[configuration](#configuration) will need to be altered for your app.
+
+```html
+<script>
+  (function() {
+    window._harvestPlatformConfig = {
+      "applicationName": "Example App",
+      "permalink": "http://example.com/projects/%PROJECT_ID%/items/%ITEM_ID%"
+    };
+    var s = document.createElement('script');
+    s.src = '//platform.harvestapp.com/assets/platform.js';
+    s.async = true;
+    var ph = document.getElementsByTagName('script')[0];
+    ph.parentNode.insertBefore(s, ph);
+  })();
+</script>
+```
+
+**Note:** If you'd like to review the non-minified JavaScript used for the
+Harvest Platform before including it on your page, you can reference the
+original file [here](https://platform.harvestapp.com/javascripts/generated/platform.js).
+
+### Configuration
+
+Options:
+
+- **applicationName** _(string, required)_: The name of your app. This will be 
+  displayed in Harvest to identify the link between Harvest project and your app. 
+  
+    _Example_: "MyTodoApp"
+
+- **permalink** _(string, required)_: The permalink structure used for your
+  app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, 
+  and `%ITEM_ID%`). 
+
+    _Example_: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`
+
+- **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided 
+CSS for the timer elements. Set this to `true` to signal to the Harvest Platform 
+that styling should be skipped. The default value is `false`.
+
+
 ## HTML
 
 The only HTML element you'll need to insert into your page is a div with the
@@ -61,55 +110,6 @@ Attributes:
   maxlength of 255)
 - **name (string)**: the name of the item. Can be any string (with a maxlength
   of 255)
-
-
-## JavaScript include tag
-
-The first step to integrating Harvest time tracking into your app involves
-placing our JavaScript include tag into your HTML. The best placement for this
-is right at the bottom of your document, just before the closing `</body>` tag.
-
-Here's what the include tag should look like. The
-[configuration](#configuration) will need to be altered for your app.
-
-```html
-<script>
-  (function() {
-    window._harvestPlatformConfig = {
-      "applicationName": "Example App",
-      "permalink": "http://example.com/projects/%PROJECT_ID%/items/%ITEM_ID%"
-    };
-    var s = document.createElement('script');
-    s.src = '//platform.harvestapp.com/assets/platform.js';
-    s.async = true;
-    var ph = document.getElementsByTagName('script')[0];
-    ph.parentNode.insertBefore(s, ph);
-  })();
-</script>
-```
-
-**Note:** If you'd like to review the non-minified JavaScript used for the
-Harvest Platform before including it on your page, you can reference the
-original file [here](https://platform.harvestapp.com/javascripts/generated/platform.js).
-
-### Configuration
-
-Options:
-
-- **applicationName** _(string, required)_: The name of your app. This will be 
-  displayed in Harvest to identify the link between Harvest project and your app. 
-  
-    _Example_: "MyTodoApp"
-
-- **permalink** _(string, required)_: The permalink structure used for your
-  app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, 
-  and `%ITEM_ID%`). 
-
-    _Example_: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`
-
-- **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided 
-CSS for the timer elements. Set this to `true` to signal to the Harvest Platform 
-that styling should be skipped. The default value is `false`.
 
 
 ## Events
