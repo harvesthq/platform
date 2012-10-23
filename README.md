@@ -46,7 +46,8 @@ Options:
 
 - **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided 
 CSS for the timer elements. Set this to `true` to signal to the Harvest Platform 
-that styling should be skipped. The default value is `false`.
+that styling should be skipped. The default value is `false`. Check out [Styling][#styling] 
+below for help with custom CSS styling.
 
 
 ## HTML
@@ -110,6 +111,21 @@ Attributes:
   maxlength of 255)
 - **name (string)**: the name of the item. Can be any string (with a maxlength
   of 255)
+
+
+### Styling
+
+By default, the platform will automatically style the `.harvest-timer` div, but
+if configured to skip that step, you can supply your own CSS. 
+
+Applying any CSS styling directly to the `.harvest-timer` elements works. That 
+will style the timer in its default, non-running state. 
+
+The `.harvest-timer` div will have an additional class of `.running` if a running 
+timer is found that matches that specific timer.
+
+_Note: if the platform isn't configured to skip styling, all `.harvest-timer`
+elements will have the additional class `.styled`._
 
 
 ## Events
