@@ -46,7 +46,7 @@ Options:
 
 - **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided 
 CSS for the timer elements. Set this to `true` to signal to the Harvest Platform 
-that styling should be skipped. The default value is `false`. Check out [Styling][#styling] 
+that styling should be skipped. The default value is `false`. Check out [Styling](#styling)
 below for help with custom CSS styling.
 
 
