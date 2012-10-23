@@ -116,10 +116,11 @@ Attributes:
 ### Styling
 
 By default, the platform will automatically style the `.harvest-timer` div, but
-if configured to skip that step, you can supply your own CSS. 
+if configured to skip that step, you can supply your own CSS.
 
 Applying any CSS styling directly to the `.harvest-timer` elements works. That 
-will style the timer in its default, non-running state. 
+will style the timer in its default, non-running state. For the case of a custom 
+icon, using a CSS-provided `background-image` is the quickest way.
 
 The `.harvest-timer` div will have an additional class of `.running` if a running 
 timer is found that matches that specific timer.
