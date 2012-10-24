@@ -39,14 +39,15 @@ Options:
     _Example_: "MyTodoApp"
 
 - **permalink** _(string, required)_: The permalink structure used for your
-  app's items. We will replace certain variables (`%ACCOUNT_ID%`, `%PROJECT_ID%`, 
-  and `%ITEM_ID%`). 
+  app's items when they are displayed in Harvest. We will replace certain variables 
+  (`%ACCOUNT_ID%`, `%PROJECT_ID%`, and `%ITEM_ID%`) from the [data attributes](#data-attributes) 
+  from each item to generate a unique permalink.
 
     _Example_: `http://exampleapp.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%`
 
 - **skipStyling** _(boolean, optional)_: Whether to use the default Harvest-provided 
-CSS for the timer elements. Set this to `true` to signal to the Harvest Platform 
-that styling should be skipped. The default value is `false`. Check out [Styling](#styling)
+CSS for the timer elements. Set this to `true` to tell the Harvest Platform that 
+styling should be skipped. The default value is `false`. Check out [Styling](#styling)
 below for help with custom CSS styling.
 
 
@@ -148,3 +149,14 @@ platform supports events of type `CustomEvent` and `jQuery.Event`.
     Attributes:
     
     - **element**: The HTMLElement that should be treated as a Harvest timer
+
+    Example usage:
+
+    ```javascript
+    var harvestEvent = {
+      type: "harvest-event:timers:add",
+      element: $(".harvest-timer").last()
+    }
+
+    $("#harvest-messaging").trigger(harvestEvent);
+    ```
