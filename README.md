@@ -1,5 +1,8 @@
 # Platform Documentation
 
+If you haven't already, you should [watch the video first](http://www.youtube.com/watch?v=5_fVPnH7VBU), 
+which walks you through the implementation process.
+
 ## JavaScript include tag
 
 The first step to integrating Harvest time tracking into your app involves
