@@ -138,9 +138,9 @@ should be fired through the `#harvest-messaging` element. Currently, the
 platform supports events of type `CustomEvent` and `jQuery.Event`.
 
 - **harvest-event:ready** - The `ready` event is fired by the platform itself
-  and indicates that everything has been initialized. **Note: This event is
+  and indicates that everything has been initialized. _Note: This event is
   fired on the `body` element, since the listening client cannot listen to the
-  `#harvest-messaging` element until it exists.**
+  `#harvest-messaging` element until it exists._
 
 - **harvest-event:timers:add** - The `timers:add` event can be used when one or
   more `harvest-timer` elements exist in the DOM and require an iframe
