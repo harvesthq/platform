@@ -51,7 +51,7 @@ Platform](#include) in your application.
   is processed along with the [data attributes](#attributes) you provide to
   build a unique permalink for each item.
 
-- **skipStyling** _(optional)_ - whether or not the use the default
+- **skipStyling** _(optional)_ - whether or not to use the default
   timer styles provided by Harvest. If you wish to [provide your own
   styles](#styling), just set this to `true`.
 
