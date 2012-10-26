@@ -11,7 +11,7 @@ For a brief overview of the Harvest Platform and how it can be implemented,
 4. [How can I add timers to new items?](#events)
 5. [How can I add custom styles to timers in my application?](#styling)
 
-<a id="include"></a>
+<a name="include"></a>
 ## How can I add the Harvest Platform to my application?
 
 To add the Harvest Platform to your application, include the following
@@ -38,7 +38,7 @@ JavaScript block in your HTML. Be sure to check out the full list of
 Harvest Platform before including it on your page, check out the [original
 file](https://platform.harvestapp.com/javascripts/generated/platform.js).
 
-<a id="config"></a>
+<a name="config"></a>
 ## What configuration options do I need to specify?
 
 The following options can be specified when [including the Harvest
@@ -55,7 +55,7 @@ Platform](#include) in your application.
   timer styles provided by Harvest. If you wish to [provide your own
   styles](#styling), just set this to `true`.
 
-<a id="timers"></a>
+<a name="timers"></a>
 ## How can I add timers to my items?
 
 When the Harvest Platform is initialized, it searches for all elements with
@@ -74,7 +74,7 @@ event](#events) containing information about the new element.
   <div class="harvest-timer"></div>
 ```
 
-<a id="attributes"></a>
+<a name="attributes"></a>
 ### Attributes
 
 Each timer element contains attributes that allow Harvest to link back to items
@@ -91,7 +91,7 @@ Basecamp), a `data-account` attribute should also be specified.
 </div>
 ```
 
-<a id="events"></a>
+<a name="events"></a>
 ## How can I add timers to new items?
 
 When you add a new item in your application, you'll need to fire a JavaScript
@@ -121,7 +121,7 @@ $("#harvest-messaging").trigger(harvestEvent);
   exists in the DOM and requires association. This includes an `element`
   attribute to represent the `harvest-timer` object.
 
-<a id="styling"></a>
+<a name="styling"></a>
 ## How can I add custom styles to timers in my application?
 
 The Harvest Platform will provide a default style for `harvest-timer` elements
