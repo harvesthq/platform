@@ -62,7 +62,7 @@ When the Harvest Platform is initialized, it searches for all elements with
 class `harvest-timer` and links each to an entry in Harvest.
 
 To add timers to your items, insert an HTML element with class
-`harvest-timer` wherever you wish you display timers in your application. To
+`harvest-timer` wherever you wish to display timers in your application. To
 associate the timer with an item, you'll need to specify a few
 [attributes](#attributes).
 
@@ -113,12 +113,11 @@ $("#harvest-messaging").trigger(harvestEvent);
 - **harvest-event:ready** - fired by the platform itself to acknowledge that
   everything has been loaded.
   
-    **Note:** This is fired on the `body` element,
-    since `#harvest-messaging` won't exist until the platform has been
-    initialized.
+    **Note:** This is fired on the `body` element since `#harvest-messaging`
+    won't exist until the platform has been initialized.
 
-- **harvest-event:timers:add** - used whene one or more `harvest-timer` element
-  exists in the DOM and requires association. This includes an `element`
+- **harvest-event:timers:add** - used when one or more `harvest-timer` elements
+  exist in the DOM and require association. This includes an `element`
   attribute to represent the `harvest-timer` object.
 
 <a name="styling"></a>
