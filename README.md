@@ -10,6 +10,7 @@ For a brief overview of the Harvest Platform and how it can be implemented,
 3. [How can I add timers to my items?](#timers)
 4. [How can I add timers to new items?](#events)
 5. [How can I add custom styles to timers in my application?](#styling)
+6. [Will the Harvest Platform detect when timers are started and stopped from within Harvest itself?](#running)
 
 <a name="include"></a>
 ## How can I add the Harvest Platform to my application?
@@ -138,3 +139,9 @@ elements.
 
 To provide a custom style for the timer icon, just add a style for the
 `harvest-timer-icon` class.
+
+<a name="running"></a>
+## Will the Harvest Platform detect when timers are started and stopped from within Harvest itself?
+
+Yes. The Harvest Platform will check for the running timer in Harvest every 30
+seconds and then change UI elements accordingly.
