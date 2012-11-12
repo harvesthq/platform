@@ -83,6 +83,9 @@ item, both `data-project` and `data-item` attributes are required. For products
 in which projects and items exist within the context of an account (e.g.
 Basecamp), a `data-account` attribute should also be specified.
 
+Each attribute is represented by a JSON object. Just escape your strings with
+`JSON.stringify`, and we'll unescape them on our end.
+
 ```html
 <div class="harvest-timer" 
   data-account='{"id":42"}'
