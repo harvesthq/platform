@@ -9,8 +9,9 @@ For a brief overview of the Harvest Platform and how it can be implemented,
 2. [What configuration options do I need to specify?](#config)
 3. [How can I add timers to my items?](#timers)
 4. [How can I add timers to new items?](#events)
-5. [How can I add custom styles to timers in my application?](#styling)
-6. [Will the Harvest Platform detect when timers are started and stopped from within Harvest itself?](#running)
+5. [How does Harvest know which project to associate with my items?](#association)
+6. [How can I add custom styles to timers in my application?](#styling)
+7. [Will the Harvest Platform detect when timers are started and stopped from within Harvest itself?](#running)
 
 <a name="include"></a>
 ## How can I add the Harvest Platform to my application?
@@ -123,6 +124,21 @@ $("#harvest-messaging").trigger(harvestEvent);
 - **harvest-event:timers:add** - used when one or more `harvest-timer` elements
   exist in the DOM and require association. This includes an `element`
   attribute to represent the `harvest-timer` object.
+
+<a name="association"></a>
+## How does Harvest know which project to associate with the groups in my application?
+
+Harvest will use the company, the third-party domain, and the third-party
+project ID to associate a third-party project with one of its own.  Once time
+has been tracked to a third-party project, Harvest will remember the
+association for other users.
+
+**Note:** If you allow your users to access your application with and without a
+subdomain, users might encounter problems accessing projects created for a
+different record.
+
+For example, a user accessing your application with `example.com` will be
+unable to access projects created on `www.example.com`.
 
 <a name="styling"></a>
 ## How can I add custom styles to timers in my application?
