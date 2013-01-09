@@ -139,12 +139,9 @@ project ID to associate a third-party project with one of its own.  Once time
 has been tracked to a third-party project, Harvest will remember the
 association for other users.
 
-**Note:** If you allow your users to access your application with and without a
-subdomain, users might encounter problems accessing projects created for a
-different record.
-
-For example, a user accessing your application with `example.com` will be
-unable to access projects created on `www.example.com`.
+**Note:** The Harvest Platform will strip the "www" subdomain, so users can
+access the same projects regardless of whether or not they use the subdomain to
+access your application.
 
 <a name="styling"></a>
 ## How can I add custom styles to timers in my application?
