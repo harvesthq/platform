@@ -1,6 +1,6 @@
 # Harvest Platform Documentation
 
-For a brief overview of the Harvest Platform and how it can be implemented,
+For a brief overview of the Harvest Platform and how it can be implemented, learn more [here](http://www.getharvest.com/platform) and 
 [watch the video introduction](http://www.youtube.com/watch?v=5_fVPnH7VBU).
 
 ## FAQ
