@@ -36,10 +36,6 @@ JavaScript block in your HTML. Be sure to check out the full list of
 </script>
 ```
 
-**Note:** If you'd like to review the uncompressed JavaScript used for the
-Harvest Platform before including it on your page, check out the [original
-file](https://platform.harvestapp.com/javascripts/generated/platform.js).
-
 <a name="config"></a>
 ## What configuration options do I need to specify?
 
