@@ -12,6 +12,7 @@ For a brief overview of the Harvest Platform and how it can be implemented, lear
 5. [How does Harvest know which project to associate with my items?](#association)
 6. [How can I add custom styles to timers in my application?](#styling)
 7. [Will the Harvest Platform detect when timers are started and stopped from within Harvest itself?](#running)
+8. [What browsers does the Harvest Platform support?](#browser-support)
 
 <a name="include"></a>
 ## How can I add the Harvest Platform to my application?
@@ -160,3 +161,8 @@ To provide a custom style for the timer icon, just add a style for the
 
 Yes. The Harvest Platform will check for the running timer in Harvest every 30
 seconds and then change UI elements accordingly.
+
+<a name="browser-support"></a>
+## What browsers does the Harvest Platform support?
+
+The Harvest Platform supports Internet Explorer 9 and later, and the latest versions of Chrome, Firefox, and Safari.
