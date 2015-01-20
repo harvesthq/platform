@@ -1,7 +1,6 @@
 # Harvest Platform Documentation
 
-For a brief overview of the Harvest Platform and how it can be implemented, learn more [here](http://www.getharvest.com/platform) and 
-[watch the video introduction](http://www.youtube.com/watch?v=5_fVPnH7VBU).
+Here is a brief overview of how the Harvest Platform can work with your app.
 
 ## How does the Harvest Platform benefit your customers?
 The Harvest Platform gives your customers a way to track time. Better yet, they never have to leave your application to do so. Just a few other reasons why your customers might love the Harvest Platform, in order of importance:
@@ -31,4 +30,5 @@ It varies by customer. But the two main Harvest features that customers will use
 - In our technical documentation, we say that the [permalink](https://github.com/harvesthq/platform#what-configuration-options-do-i-need-to-specify) is optional. Which is true, it is. But, linking Harvest time entries back to your app’s attributes is one of the top reasons why customers use the Harvest Platform integrations. Having this linkage makes the success of your integration all the more likely.
 - We say that you can apply custom styles to the Harvest timer within your app, but we recommend that you use blue as the color to indicate a running timer. Our customers are used to this in the Harvest interface, so it won’t require any additional thought to understand when they have a timer running from your app.
 
-**Ready to dive into the few technical details?** Click [here]().
+**Ready to dive into the few technical details?** Click [here](https://github.com/harvesthq/platform/blob/Platform-Best-Practices/Platform_Technical_FAQ.md) for a technical FAQ or
+[watch the video introduction](http://www.youtube.com/watch?v=5_fVPnH7VBU).
