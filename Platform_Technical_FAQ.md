@@ -1,3 +1,5 @@
+# Harvest Platform Technical FAQ
+
 1. [How can I add the Harvest Platform to my application?](#include)
 2. [What configuration options do I need to specify?](#config)
 3. [How can I add timers to my items?](#timers)
