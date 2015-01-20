@@ -5,8 +5,9 @@ Here is a brief overview of how the Harvest Platform can work with your app.
 ## How does the Harvest Platform benefit your customers?
 The Harvest Platform gives your customers a way to track time. Better yet, they never have to leave your application to do so. Just a few other reasons why your customers might love the Harvest Platform, in order of importance:
 
-1. Timesheet entries in Harvest link back to projects/tasks in your app, so people can quickly see the full details of a specific time entry.
-2. The titles of the projects/tasks in your app populate the Notes field of a Harvest timer so that people don’t have to re-enter the details of their work.
+1. Timesheet entries in Harvest link back to projects/tasks in your app, so people can quickly see the full details of a specific time entry.  
+![](https://www.getharvest.com/assets/platform/harvest-platform-harvest-2268ac5a9b1f5db6e988761d361b2e9d.png)
+2. The titles of the projects/tasks in your app populate the notes field of a Harvest timer so that people don’t have to re-enter the details of their work.
 3. For each of your app’s projects/tasks, the Harvest timer pre-selects the last project/task that a person tracked time to. This ensures that people are consistent with their time tracking in Harvest, and means less clicks to get to work.
 4. All time tracked to that project/task shows up at the bottom of the Harvest Platform modal. This lets people quickly see how much time they’ve spent on a project/task without ever having to leave your app.
 
