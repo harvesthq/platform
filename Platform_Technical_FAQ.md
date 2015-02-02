@@ -127,9 +127,11 @@ $("#harvest-messaging").trigger(harvestEvent);
 ## How does Harvest know which project to associate with the groups in my application?
 
 Harvest will use the company, the third-party domain, and the third-party
-project ID to associate a third-party project with one of its own.  Once time
-has been tracked to a third-party project, Harvest will remember the
-association for other users.
+project ID to associate a third-party project with one of its own.  By default,
+Harvest will suggest the last project and task chosen by the current user for
+the third-party project. If the current user has never tracked time to this
+third-party project, the most recent project and task used within the user’s
+company will be suggested.
 
 **Note:** The Harvest Platform will strip the "www" subdomain, so users can
 access the same projects regardless of whether or not they use the subdomain to
