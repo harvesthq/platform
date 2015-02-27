@@ -31,5 +31,5 @@ It varies by customer. But the two main Harvest features that customers will use
 - In our technical documentation, we say that the [permalink](https://github.com/harvesthq/platform/blob/master/Platform_Technical_FAQ.md#what-configuration-options-do-i-need-to-specify) is optional. Which is true, it is. But, linking Harvest time entries back to your app’s attributes is one of the top reasons why customers use the Harvest Platform integrations. Having this linkage makes the success of your integration all the more likely.
 - We say that you can apply custom styles to the Harvest timer within your app, but we recommend that you use blue as the color to indicate a running timer. Our customers are used to this in the Harvest interface, so it won’t require any additional thought to understand when they have a timer running from your app.
 
-**Ready to dive into the few technical details?** Click [here](https://github.com/harvesthq/platform/blob/Platform-Best-Practices/Platform_Technical_FAQ.md) for a technical FAQ or
+**Ready to dive into the few technical details?** Click [here](https://github.com/harvesthq/platform/blob/master/Platform_Technical_FAQ.md) for a technical FAQ or
 [watch the video introduction](http://www.youtube.com/watch?v=5_fVPnH7VBU).
