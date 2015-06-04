@@ -49,12 +49,6 @@ Platform](#include) in your application.
   timer styles provided by Harvest. If you wish to [provide your own
   styles](#styling), just set this to `true`.
 
-- **skipJquery** _(optional)_ - whether or not to load Harvest's jQuery in the
-  Harvest Platform load sequence. If you prefer to use your own and avoid a
-  second HTTP request, set this to `true`. **Note: If using a version of jQuery
-  older than the one used in the Harvest Platform (v1.7.2), you may experience
-  issues.
-
 <a name="timers"></a>
 ## How can I add timers to my items?
 
