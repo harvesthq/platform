@@ -21,7 +21,7 @@ JavaScript block in your HTML. Be sure to check out the full list of
   (function() {
     window._harvestPlatformConfig = {
       "applicationName": "Example App",
-      "permalink": "http://example.com/%ACCOUNT_ID%/projects/%PROJECT_ID%/items/%ITEM_ID%"
+      "permalink": "http://example.com/%ACCOUNT_ID%/projects/%GROUP_ID%/items/%ITEM_ID%"
     };
     var s = document.createElement('script');
     s.src = '//platform.harvestapp.com/assets/platform.js';
@@ -79,17 +79,17 @@ event](#events) containing information about the new element.
 
 Each timer element contains attributes that allow Harvest to link back to items
 in your application using permalinks. For Harvest to properly track time to an
-item, both `data-project` and `data-item` attributes are required. For products
-in which projects and items exist within the context of an account (e.g.
+item, both `data-group` and `data-item` attributes are required. For products
+in which groups and items exist within the context of an account (e.g.
 Basecamp), a `data-account` attribute should also be specified.
 
 Each attribute is represented by a JSON object. Just escape your strings with
 `JSON.stringify`, and we'll unescape them on our end.
 
 ```html
-<div class="harvest-timer" 
+<div class="harvest-timer"
   data-account='{"id":42"}'
-  data-project='{"id":42,"name":"Harvest Platform"}'
+  data-group='{"id":42,"name":"Harvest Platform"}'
   data-item='{"id":1337,"name":"Write documentation"}'>
 </div>
 ```
@@ -127,10 +127,10 @@ $("#harvest-messaging").trigger(harvestEvent);
 ## How does Harvest know which project to associate with the groups in my application?
 
 Harvest will use the company, the third-party domain, and the third-party
-project ID to associate a third-party project with one of its own.  By default,
+group ID to associate a third-party project with one of its own.  By default,
 Harvest will suggest the last project and task chosen by the current user for
-the third-party project. If the current user has never tracked time to this
-third-party project, the most recent project and task used within the user’s
+the third-party group. If the current user has never tracked time to this
+third-party group, the most recent project and task used within the user’s
 company will be suggested.
 
 **Note:** The Harvest Platform will strip the "www" subdomain, so users can
