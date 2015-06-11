@@ -7,7 +7,7 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
   src="https://platform.harvestapp.com/platform/timer?
     app_name=ExampleCompany&
     closable=false&
-    base_url=http%3A%2F%2Fexample.com%2Fitem%2F1&
+    permalink=http%3A%2F%2Fexample.com%2Fitem%2F1&
     external_item_id=1&
     external_item_name=Programming">
 </iframe>
@@ -24,7 +24,7 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
 | `external_item_name`  | The human-readable name of the item in your application this timer is related to. This will be filled into the Notes field. For example, a Trello Card Name: `Update%20image%20on%20landing%20page.`
 | `external_group_id`   | A machine-identifier for the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board ID: `0FdAjinR`
 | `external_group_name` | The human-readable name of the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board Name: `Landing%20Pages%20Overhaul`
-| `base_url`            | The URL to the item in your application this timer is related to. For example, a Trello Card URL: `https%3A%2F%2Ftrello.com%2Fc%2FY7h4fW14%2F61-update-image-on-landing-page`
+| `permalink`            | The URL to the item in your application this timer is related to. For example, a Trello Card URL: `https%3A%2F%2Ftrello.com%2Fc%2FY7h4fW14%2F61-update-image-on-landing-page`
 | `closable`            | `true` or `false` indicating if Close or Cancel buttons should be rendered. Default:  `true`.
 | `chromeless`          | `true` or `false` indicating if the Harvest branding should be rendered. Default: `false`.
 
