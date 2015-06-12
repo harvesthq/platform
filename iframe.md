@@ -25,8 +25,8 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
 | `external_group_id`   | A machine-identifier for the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board ID: `0FdAjinR`
 | `external_group_name` | The human-readable name of the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board Name: `Landing%20Pages%20Overhaul`
 | `permalink`            | The URL to the item in your application this timer is related to. For example, a Trello Card URL: `https%3A%2F%2Ftrello.com%2Fc%2FY7h4fW14%2F61-update-image-on-landing-page`
-| `closable`            | `true` or `false` indicating if Close or Cancel buttons should be rendered. Default:  `true`.
-| `chromeless`          | `true` or `false` indicating if the Harvest branding should be rendered. Default: `false`.
+| `closable`            | `true` or `false` indicating if Close or Cancel buttons should be rendered. Default:  `true`
+| `chromeless`          | `true` or `false` indicating if the Harvest branding should be rendered. Default: `false`
 
 
 ## Resizing the Height *(optional)*
