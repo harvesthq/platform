@@ -28,7 +28,7 @@ Then, drop this `<script>` into your application:
 
 The script will handle it from here! 
 
-If you need to add a Harvest Button after the script has loaded, see [Adding Buttons After Loading]().
+If you need to add a Harvest Button after the script has loaded, see [Adding Buttons After Loading](#adding-buttons-after-loaded).
 
 ## Configuration Options
 
