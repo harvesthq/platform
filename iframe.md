@@ -7,7 +7,7 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
   src="https://platform.harvestapp.com/platform/timer?
     app_name=ExampleCompany&
     closable=false&
-    permalink=http%3A%2F%2Fexample.com%2Fitem%2F1&
+    permalink=https%3A%2F%2Fexample.com%2Fitem%2F1&
     external_item_id=1&
     external_item_name=Programming">
 </iframe>
