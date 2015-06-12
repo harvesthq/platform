@@ -42,11 +42,11 @@ These global configuration settings are set on the `window._harvestPlatformConfi
 
 These settings are set on each timer DOM element as attributes:
 
-| Attribute      | Description 
-|----------------|-------------
-| `data-item`    | A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. The `name` property will be filled into the Notes field of the timer dialog. For example, a Trello Card: `{"id":"Y7h4fW14","name":"Update image on landing page."}`
-| `data-group`   | A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board: `{"id":"0FdAjinR","name":"Landing Pages Overhaul"}`
-| `data-account` | A JSON object containing an `id` property — used only to populate `%ACCOUNT_ID` in the `permalink` configuration setting. If you are not using `%ACCOUNT_ID%`, there is no need to set this attribute.
+| Attribute               | Description 
+|-------------------------|-------------
+| <pre>data-item</pre>    | A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. The `name` property will be filled into the Notes field of the timer dialog. For example, a Trello Card: `{"id":"Y7h4fW14","name":"Update image on landing page."}`
+| <pre>data-group</pre>   | A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board: `{"id":"0FdAjinR","name":"Landing Pages Overhaul"}`
+| <pre>data-account</pre> | A JSON object containing an `id` property — used only to populate `%ACCOUNT_ID` in the `permalink` configuration setting. If you are not using `%ACCOUNT_ID%`, there is no need to set this attribute.
 
 ## Detecting When Loaded
 
