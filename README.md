@@ -10,10 +10,10 @@
   <tbody>
     <tr>
       <td width="50%">
-        <img src="http://cl.ly/image/0q0W1H003p1n/Image%202015-06-15%20at%204.00.36%20PM.png" alt="Screenshot of the Harvest Button in action">
+        <a href="button.md"><img src="http://cl.ly/image/0q0W1H003p1n/Image%202015-06-15%20at%204.00.36%20PM.png" alt="Screenshot of the Harvest Button in action"></a>
       </td>
       <td width="50%">
-        <img src="http://cl.ly/image/0a1q151i2s0b/Image%202015-06-15%20at%204.14.54%20PM.png" alt="Screenshot of the Harvest Widget in action">
+        <a href="widget.md"><img src="http://cl.ly/image/0a1q151i2s0b/Image%202015-06-15%20at%204.14.54%20PM.png" alt="Screenshot of the Harvest Widget in action"></a>
       </td>
     </tr>
     <tr>
