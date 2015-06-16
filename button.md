@@ -1,4 +1,4 @@
-## Quick Start
+# Harvest Button Documentation
 
 The Harvest Button works by running a script that handles creating elements and their respective behavior. 
 

@@ -13,12 +13,12 @@
         <a href="button.md"><img src="http://cl.ly/image/0q0W1H003p1n/Image%202015-06-15%20at%204.00.36%20PM.png" alt="Screenshot of the Harvest Button in action"></a>
       </td>
       <td width="50%">
-        <a href="widget.md"><img src="http://cl.ly/image/0a1q151i2s0b/Image%202015-06-15%20at%204.14.54%20PM.png" alt="Screenshot of the Harvest Widget in action"></a>
+        <a href="widget.md"><img src="http://cl.ly/image/2p0r2c251I2w/Image%202015-06-16%20at%2011.31.29%20AM.png" alt="Screenshot of the Harvest Widget in action"></a>
       </td>
     </tr>
     <tr>
-      <td>The Harvest Button is a script that runs within your application to provide a clock icon that, when clicked, shows a modal dialog with a form to track time in Harvest. <a href="button.md">Try it now…</a></td>
-      <td>The Harvest Widget is a frame that is loaded by your application that contains a form to track time in Harvest. <a href="widget.md">Try it now…</a></td>
+      <td>The Harvest Button is a script that runs within your application to provide a clock icon that, when clicked, shows a modal dialog with a form to track time in Harvest. <a href="button.md">Get started!</a></td>
+      <td>The Harvest Widget is a frame that is loaded by your application that contains a form to track time in Harvest. <a href="widget.md">Get started!</a></td>
     </tr>
   </tbody>
 </table>
