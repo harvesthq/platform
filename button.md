@@ -1,6 +1,6 @@
 # Harvest Button Documentation
 
-The Harvest Button works by running a script that handles creating elements and their respective behavior. 
+The Harvest Button works by running a script that handles creating elements and their respective behavior.
 
 Add Harvest Button placeholders to your application where appropriate:
 
@@ -28,7 +28,7 @@ Then, drop this `<script>` into your application:
 </script>
 ```
 
-The script will handle it from here! 
+The script will handle it from here!
 
 If you need to add a Harvest Button after the script has loaded, see [Adding Buttons After Loading](#adding-buttons-after-loaded).
 
@@ -44,7 +44,7 @@ These global configuration settings are set on the `window._harvestPlatformConfi
 
 These settings are set on each timer DOM element as attributes:
 
-| Attribute               | Description 
+| Attribute               | Description
 |-------------------------|-------------
 | <pre>data-item</pre>    | A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. The `name` property will be filled into the Notes field of the timer dialog. For example, a Trello Card: `{"id":"Y7h4fW14","name":"Update image on landing page."}`
 | <pre>data-group</pre>   | A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board: `{"id":"0FdAjinR","name":"Landing Pages Overhaul"}`
@@ -68,7 +68,7 @@ document.body.addEventListener("harvest-event:ready", function () {
 
 ## Adding Buttons After Loaded
 
-Harvest Button elements added to the page after the script has loaded won’t be immediately recognized. To trigger the script to load new timers: 
+Harvest Button elements added to the page after the script has loaded won’t be immediately recognized. To trigger the script to load new timers:
 
 ```javascript
 // Using jQuery:

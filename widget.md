@@ -1,9 +1,9 @@
-## Quick Start
+# Harvest Widget Documentation
 
 This embedded `<iframe>` allows you to embed a Harvest Timer form directly into your application. Create an `<iframe>` like this:
 
 ```
-<iframe 
+<iframe
   src="https://platform.harvestapp.com/platform/timer?
     app_name=ExampleCompany&
     closable=false&
@@ -17,7 +17,7 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
 
 **It is your responsibility to correctly encode these parameters.** If you’re building this URL in JavaScript, you’ll want to use [`encodeURIComponent`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
 
-| Parameter             | Description 
+| Parameter             | Description
 |-----------------------|-------------
 | `app_name`            | The human-readable name of your application. Example: `Trello`
 | `external_item_id`    | A machine-identifier for the item in your application this timer is related to. For example, a Trello Card ID: `Y7h4fW14`
@@ -36,11 +36,11 @@ The height of the content within the frame changes as the user interacts with th
 ```javascript
 window.addEventListener("message", function (event) {
   var matches;
-  
+
   if (event.origin != "https://platform.harvestapp.com") {
     return;
   }
-  
+
   if (matches = event.data.match(/height:([0-9]+)/)) {
     document.querySelector("iframe").style.height = matches[1] + "px";
   }

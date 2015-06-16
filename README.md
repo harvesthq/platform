@@ -31,7 +31,7 @@ There is no additional configuration within your application for selecing a Harv
 
 Harvest will take the information you provide about the item the user is tracking time against to suggest a Harvest Project and Task that we think the user is most likely to use. You cannot set the Harvest Project and Task shown by default explicitly.
 
-The Harvest Project and Task suggested is based on what time has already been tracked to this item in your application. If no time has been tracked to this item yet, then the suggestion is based off the group that the item is a part of in your application. If the group also has no time tracked, a Harvest Project that was created from the time tracking form will be considered. 
+The Harvest Project and Task suggested is based on what time has already been tracked to this item in your application. If no time has been tracked to this item yet, then the suggestion is based off the group that the item is a part of in your application. If the group also has no time tracked, a Harvest Project that was created from the time tracking form will be considered.
 
 ## Browser Support
 
