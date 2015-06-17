@@ -36,11 +36,11 @@ If you need to add a Harvest Button after the script has loaded, see [Adding But
 
 These global configuration settings are set on the `window._harvestPlatformConfig` object:
 
-| Parameter         | Description
-|-------------------|-------------
-| `applicationName` | The human-readable name of your application. Example: `Trello`
-| `permalink`       | The URL pattern used to generate links back to your application. `%ACCOUNT_ID%`, `%GROUP_ID%`, and `%ITEM_ID%` will be replaced by the data supplied on each timer element. For example, a Trello Card URL: `https://trello.com/c/%ITEM_ID%/`
-| `skipStyling`     | `true` or `false` indicating if you’d like the default styles applied to timer elements. Default: `false`
+| Parameter                  | Description
+|----------------------------|-------------
+| <pre>applicationName</pre> | The human-readable name of your application. Example: `Trello`
+| <pre>permalink</pre>       | The URL pattern used to generate links back to your application. `%ACCOUNT_ID%`, `%GROUP_ID%`, and `%ITEM_ID%` will be replaced by the data supplied on each timer element. For example, a Trello Card URL: `https://trello.com/c/%ITEM_ID%/`
+| <pre>skipStyling</pre>     | `true` or `false` indicating if you’d like the default styles applied to timer elements. Default: `false`
 
 These settings are set on each timer DOM element as attributes:
 
