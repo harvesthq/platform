@@ -8,8 +8,8 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
     app_name=ExampleCompany&
     closable=false&
     permalink=https%3A%2F%2Fexample.com%2Fitem%2F1&
-    external_item_id=1&
-    external_item_name=Programming">
+    item_id=1&
+    item_name=Programming">
 </iframe>
 ```
 
@@ -17,16 +17,16 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
 
 **It is your responsibility to correctly encode these parameters.** If you’re building this URL in JavaScript, you’ll want to use [`encodeURIComponent`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
 
-| Parameter                      | Description
-|--------------------------------|-------------
-| <pre>app_name</pre>            | The human-readable name of your application. Example: `Trello`
-| <pre>external_item_id</pre>    | A machine-identifier for the item in your application this timer is related to. For example, a Trello Card ID: `Y7h4fW14`
-| <pre>external_item_name</pre>  | The human-readable name of the item in your application this timer is related to. This will be filled into the Notes field. For example, a Trello Card Name: `Update%20image%20on%20landing%20page.`
-| <pre>external_group_id</pre>   | A machine-identifier for the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board ID: `0FdAjinR`
-| <pre>external_group_name</pre> | The human-readable name of the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board Name: `Landing%20Pages%20Overhaul`
-| <pre>permalink</pre>            | The URL to the item in your application this timer is related to. For example, a Trello Card URL: `https%3A%2F%2Ftrello.com%2Fc%2FY7h4fW14%2F61-update-image-on-landing-page`
-| <pre>closable</pre>            | `true` or `false` indicating if Close or Cancel buttons should be rendered. Default:  `true`
-| <pre>chromeless</pre>          | `true` or `false` indicating if the Harvest branding should be rendered. Default: `false`
+| Parameter             | Description
+|---------------------- |-------------
+| <pre>app_name</pre>   | The human-readable name of your application. Example: `Trello`
+| <pre>item_id</pre>    | A machine-identifier for the item in your application this timer is related to. For example, a Trello Card ID: `Y7h4fW14`
+| <pre>item_name</pre>  | The human-readable name of the item in your application this timer is related to. This will be filled into the Notes field. For example, a Trello Card Name: `Update%20image%20on%20landing%20page.`
+| <pre>group_id</pre>   | A machine-identifier for the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board ID: `0FdAjinR`
+| <pre>group_name</pre> | The human-readable name of the group that the item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board Name: `Landing%20Pages%20Overhaul`
+| <pre>permalink</pre>  | The URL to the item in your application this timer is related to. For example, a Trello Card URL: `https%3A%2F%2Ftrello.com%2Fc%2FY7h4fW14%2F61-update-image-on-landing-page`
+| <pre>closable</pre>   | `true` or `false` indicating if Close or Cancel buttons should be rendered. Default:  `true`
+| <pre>chromeless</pre> | `true` or `false` indicating if the Harvest branding should be rendered. Default: `false`
 
 
 ## Resizing the Height *(optional)*
