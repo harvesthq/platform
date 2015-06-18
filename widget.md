@@ -35,14 +35,12 @@ The height of the content within the frame changes as the user interacts with th
 
 ```javascript
 window.addEventListener("message", function (event) {
-  var matches;
-
   if (event.origin != "https://platform.harvestapp.com") {
     return;
   }
 
-  if (matches = event.data.match(/height:([0-9]+)/)) {
-    document.querySelector("iframe").style.height = matches[1] + "px";
+  if (event.data.type == "frame:resize") {
+    document.querySelector("iframe").style.height = event.data.value + "px";
   }
 });
 ```
