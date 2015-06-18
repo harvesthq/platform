@@ -1,4 +1,6 @@
-# Harvest Widget Documentation
+# Harvest Widget Documentation (Beta)
+
+The Harvest Widget is currently in beta release — it may change rapidly and without warning. Do not use this in production in its current state.
 
 This embedded `<iframe>` allows you to embed a Harvest Timer form directly into your application. Create an `<iframe>` like this:
 
