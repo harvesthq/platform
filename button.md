@@ -86,4 +86,4 @@ document.querySelector("#harvest-messaging").dispatchEvent(event);
 
 ## Watch a Demo
 
-Watch a [live demo](https://www.youtube.com/watch?v=-9p1L8ED9Us) of how to integrate the Harvest Platform.
+Watch a [live demo](https://www.youtube.com/watch?v=-9p1L8ED9Us) of how to integrate the Harvest Button.
