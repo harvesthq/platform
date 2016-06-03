@@ -14,18 +14,12 @@ Then, drop this `<script>` into your application:
 
 ```javascript
 <script>
-  (function () {
-    window._harvestPlatformConfig = {
-      "applicationName": "ExampleCompany",
-      "permalink": "https://example.com/item/%ITEM_ID%"
-    };
-    var s = document.createElement("script");
-    s.src = "https://platform.harvestapp.com/assets/platform.js";
-    s.async = true;
-    var ph = document.getElementsByTagName("script")[0];
-    ph.parentNode.insertBefore(s, ph);
-  })();
+  window._harvestPlatformConfig = {
+    "applicationName": "ExampleCompany",
+    "permalink": "https://example.com/item/%ITEM_ID%"
+  };
 </script>
+<script async src="https://platform.harvestapp.com/assets/platform.js"></script>
 ```
 
 The script will handle it from here!
