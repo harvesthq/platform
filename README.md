@@ -35,4 +35,4 @@ The Harvest Project and Task suggested is based on what time has already been tr
 
 ## Browser Support
 
-Both the Harvest Button and the Harvest Widget support [the same browsers that Harvest supports](https://www.getharvest.com/help/supported-browsers).
+Both the Harvest Button and the Harvest Widget support [the same browsers that Harvest supports](http://help.getharvest.com/harvest/faqs/overview/supported-browsers/).
