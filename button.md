@@ -33,17 +33,17 @@ These global configuration settings are set on the `window._harvestPlatformConfi
 | Parameter                  | Description
 |----------------------------|-------------
 | <pre>applicationName</pre> | The human-readable name of your application. Example: `Trello`
-| <pre>permalink</pre>       | The URL pattern used to generate links back to your application. `%ACCOUNT_ID%`, `%GROUP_ID%`, and `%ITEM_ID%` will be replaced by the data supplied on each timer element. For example, a Trello Card URL: `https://trello.com/c/%ITEM_ID%/`
 | <pre>skipStyling</pre>     | `true` or `false` indicating if you’d like the default styles applied to timer elements. Default: `false`
 
 These settings are set on each timer DOM element as attributes:
 
-| Attribute               | Description
-|-------------------------|-------------
-| <pre>data-item</pre>    | A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. The `name` property will be filled into the Notes field of the timer dialog. For example, a Trello Card: `{"id":"Y7h4fW14","name":"Update image on landing page."}`
-| <pre>data-group</pre>   | A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board: `{"id":"0FdAjinR","name":"Landing Pages Overhaul"}`
-| <pre>data-account</pre> | A JSON object containing an `id` property — used only to populate `%ACCOUNT_ID%` in the `permalink` configuration setting. If you are not using `%ACCOUNT_ID%`, there is no need to set this attribute.
-| <pre>data-default</pre> | A JSON object containing a `project_name` or `project_code` property — used to pre-select a suggested project by either its name or code. This has to be an exact match. For example: `{"project_code":"GOOG123"}` or `{"project_name":"Project 123 for Google"}`
+| Attribute                 | Description
+|---------------------------|-------------
+| <pre>data-item</pre>      | A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. The `name` property will be filled into the Notes field of the timer dialog. For example, a Trello Card: `{"id":"Y7h4fW14","name":"Update image on landing page."}`
+| <pre>data-group</pre>     | A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. If your application does not have a higher-level group, this may be omitted. For example, a Trello Board: `{"id":"0FdAjinR","name":"Landing Pages Overhaul"}`
+| <pre>data-account</pre>   | A JSON object containing an `id` property — used only to populate `%ACCOUNT_ID%` in the `permalink` configuration setting. If you are not using `%ACCOUNT_ID%`, there is no need to set this attribute.
+| <pre>data-default</pre>   | A JSON object containing a `project_name` or `project_code` property — used to pre-select a suggested project by either its name or code. This has to be an exact match. For example: `{"project_code":"GOOG123"}` or `{"project_name":"Project 123 for Google"}`
+| <pre>data-permalink</pre> | A URL linking back to the item in your application this timer is related to. This will be displayed alongside your timer in Harvest.
 
 ## Detecting When Loaded
 
