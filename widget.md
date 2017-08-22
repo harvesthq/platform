@@ -9,7 +9,9 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
     closable=false&
     permalink=https%3A%2F%2Fexample.com%2Fitem%2F1&
     external_item_id=1&
-    external_item_name=Programming">
+    external_item_name=Programming&
+    external_group_id=2&
+    external_group_name=TPS%20Reports">
 </iframe>
 ```
 
