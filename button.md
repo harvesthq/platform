@@ -16,7 +16,7 @@ Then, drop this `<script>` into your application:
 <script>
   window._harvestPlatformConfig = {
     "applicationName": "ExampleCompany",
-    "permalink": "https://example.com/item-1337"
+    "permalink": "https://example.com/items/%ITEM_ID%"
   };
 </script>
 <script async src="https://platform.harvestapp.com/assets/platform.js"></script>
@@ -40,17 +40,17 @@ These settings are set on each timer DOM element as attributes:
 
 | Attribute                 | Description
 |---------------------------|-------------
-| <pre>data-item (required)</pre>       | Object. A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. The `name` property will be filled into the Notes field of the timer dialog.
-| <pre>data-group (optional)</pre>      | Object. A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. `name` will allow for creating a Harvest Project of that name to track time to. If your application does not have a higher-level group, this may be omitted.
+| <pre>data-item (required)</pre>       | Object. A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. `id` will populate `%ITEM_ID%` in the `permalink` configuration setting. `name` will be filled into the Notes field of the timer dialog.
+| <pre>data-group (optional)</pre>      | Object. A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. `id` will populate `%GROUP_ID%` in the `permalink` configuration setting. `name` will allow for creating a Harvest Project of that name to track time to. If your application does not have a higher-level group, this may be omitted.
 | <pre>data-account (optional)</pre>    | Object. A JSON object containing an `id` property — used only to populate `%ACCOUNT_ID%` in the `permalink` configuration setting. If you are not using `%ACCOUNT_ID%`, there is no need to set this attribute.
 | <pre>data-default (optional)</pre>    | Object. A JSON object containing a `project_name` or `project_code` property — used to pre-select a suggested project by either its name or code. This has to be an exact match.**
 | <pre>data-permalink (*required)</pre> | String. A URL linking back to the item in your application this timer is related to. This will be displayed alongside your timer in Harvest.
 
 `*` You must have either `permalink` in your global configuration settings, or `data-permalink` in your timer/s attributes. Use the former if you only want to add one timer element or if you want all timer elements to have the same permalink. Use the latter if you want to have multiple timer elements with unique permalinks.
 
-`**` The project code and project name can be found in your Harvest Account under projects:
+`**` The project code and project name can be found in your Harvest Account under Projects while editing the targeted project:
 
-<img width="668" alt="Screen Shot 2021-12-09 at 2 55 44 PM" src="https://user-images.githubusercontent.com/23469053/145486505-631b7d1b-da1e-4d03-8f86-cfe6d781b8e3.png">
+<img width="685" alt="ProjectNameCode" src="https://user-images.githubusercontent.com/23469053/145632213-223e8822-cf17-49da-b496-fced6f70c791.png">
 
 ## Examples
 
@@ -61,7 +61,7 @@ Timer DOM elements:
 ```html
 <div class="harvest-timer"
   data-item='{"id":1337,"name":"Remove unused libraries"}'
-  data-group='{"id":179","name":"Q4 Projects: Cleanup Tech Debt"}'
+  data-group='{"id":179,"name":"Q4 Projects: Cleanup Tech Debt"}'
   data-permalink='https://example.com/projects/179/1337'>
 </div>
 ```
@@ -69,7 +69,7 @@ Timer DOM elements:
 ```html
 <div class="harvest-timer"
   data-item='{"id":1338,"name":"Add more testing"}'
-  data-group='{"id":179","name":"Q4 Projects: Cleanup Tech Debt"}'
+  data-group='{"id":179,"name":"Q4 Projects: Cleanup Tech Debt"}'
   data-permalink='https://example.com/projects/179/1338'>
 </div>
 ```
@@ -83,6 +83,19 @@ window._harvestPlatformConfig = {
 };
 ```
 
+Timer UI:
+
+<img width="509" alt="DataGroup" src="https://user-images.githubusercontent.com/23469053/145631884-3ab87ff7-1711-41b3-8a07-d7a4110935cd.png">
+
+Timesheet in Harvest with Time Tracked from the Harvest Button:
+
+<img width="817" alt="DataGroupTimesheet" src="https://user-images.githubusercontent.com/23469053/145631921-db2fae1a-3a46-4d62-b92f-69e8a405c421.png">
+
+Timesheet permalink:
+
+<img width="339" alt="DataGroupPermalink" src="https://user-images.githubusercontent.com/23469053/145631967-5f6572b6-5e84-4246-94ff-978a9844e1ec.png">
+
+
 #### Single Styled Button With Data Default
 
 Timer DOM element:
@@ -90,7 +103,7 @@ Timer DOM element:
 ```html
 <div class="harvest-timer"
   data-item='{"id":1337,"name":"Remove unused libraries"}'
-  data-default='{"project-code":"q4-projects-cleanup}'>
+  data-default='{"project_code":"q4-projects-cleanup"}'>
 </div>
 ```
 
@@ -102,6 +115,41 @@ window._harvestPlatformConfig = {
   "permalink": "https://example.com/projects/1337"
 };
 ```
+
+Timer UI:
+
+<img width="508" alt="DataDefault" src="https://user-images.githubusercontent.com/23469053/145632021-e599e602-d3e5-42da-a6f6-4e3556eea115.png">
+
+Timesheet permalink:
+
+<img width="354" alt="DataDefaultPermalink" src="https://user-images.githubusercontent.com/23469053/145632047-02b4cf5e-e39d-4f1f-9be5-c957c0556c76.png">
+
+
+#### Single Styled Button Using Ids to Populate Permalink
+
+Timer DOM element:
+
+```html
+<div class="harvest-timer"
+  data-item='{"id":1337,"name":"Remove unused libraries"}'
+  data-group='{"id":179,"name":"Q4 Projects: Cleanup Tech Debt"}'
+  data-account='{"id":"1278453"}'>
+</div>
+```
+
+Global configuration settings:
+
+```javascript
+window._harvestPlatformConfig = {
+  "applicationName": "ExampleCompany",
+  "permalink": "https://example.com/%ACCOUNT_ID%/%GROUP_ID%/%ITEM_ID%"
+};
+```
+
+Timesheet permalink:
+
+<img width="332" alt="PopulatedPermlink" src="https://user-images.githubusercontent.com/23469053/145632101-be3ec71f-63a1-476e-a260-f1f403ea5149.png">
+
 
 ## Detecting When Loaded
 
