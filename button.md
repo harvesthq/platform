@@ -28,6 +28,8 @@ If you need to add a Harvest Button after the script has loaded, see [Adding But
 
 ## Configuration Options
 
+### Global Configuration
+
 These global configuration settings are set on the `window._harvestPlatformConfig` object:
 
 | Parameter                  | Description
@@ -36,13 +38,15 @@ These global configuration settings are set on the `window._harvestPlatformConfi
 | <pre>skipStyling (optional)</pre>     | Boolean. `true` or `false` indicating if you’d like the default styles applied to timer elements. Default: `false`
 | <pre>permalink (*required)</pre>      | String. A URL linking back to your application. This will be displayed alongside your timer in Harvest.
 
+### Timer DOM Element Configuration
+
 These settings are set on each timer DOM element as attributes:
 
 | Attribute                 | Description
 |---------------------------|-------------
-| <pre>data-item (required)</pre>       | Object. A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. `id` will populate `%ITEM_ID%` in the `permalink` configuration setting. `name` will be filled into the Notes field of the timer dialog.
-| <pre>data-group (optional)</pre>      | Object. A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. `id` will populate `%GROUP_ID%` in the `permalink` configuration setting. `name` will allow for creating a Harvest Project of that name to track time to. If your application does not have a higher-level group, this may be omitted.
-| <pre>data-account (optional)</pre>    | Object. A JSON object containing an `id` property — used only to populate `%ACCOUNT_ID%` in the `permalink` configuration setting. If you are not using `%ACCOUNT_ID%`, there is no need to set this attribute.
+| <pre>data-item (required)</pre>       | Object. A JSON object containing `id` and `name` properties representing the item in your application this timer is related to. `id` will populate `%ITEM_ID%` in the `permalink` global configuration setting. `name` will be filled into the Notes field of the timer dialog.
+| <pre>data-group (optional)</pre>      | Object. A JSON object containing `id` and `name` properties representing the group in your application that this item belongs to. `id` will populate `%GROUP_ID%` in the `permalink` global configuration setting. `name` will allow for creating a Harvest Project of that name to track time to. If your application does not have a higher-level group, this may be omitted.
+| <pre>data-account (optional)</pre>    | Object. A JSON object containing an `id` property — used only to populate `%ACCOUNT_ID%` in the `permalink` global configuration setting. If you are not using `%ACCOUNT_ID%`, there is no need to set this attribute. The account ID is tied to a personal access token which can be created or found at https://id.getharvest.com/developers 
 | <pre>data-default (optional)</pre>    | Object. A JSON object containing a `project_name` or `project_code` property — used to pre-select a suggested project by either its name or code. This has to be an exact match.**
 | <pre>data-permalink (*required)</pre> | String. A URL linking back to the item in your application this timer is related to. This will be displayed alongside your timer in Harvest.
 
