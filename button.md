@@ -50,7 +50,7 @@ These settings are set on each timer DOM element as attributes:
 | <pre>data-default (optional)</pre>    | Object. A JSON object containing a `project_name` or `project_code` property — used to pre-select a suggested project by either its name or code. This has to be an exact match.**
 | <pre>data-permalink (*required)</pre> | String. A URL linking back to the item in your application this timer is related to. This will be displayed alongside your timer in Harvest.
 
-`*` You must have either `permalink` in your global configuration settings, or `data-permalink` in your timer/s attributes. Use the former if you only want to add one timer element or if you want all timer elements to have the same permalink. Use the latter if you want to have multiple timer elements with unique permalinks.
+`*` You must have either `permalink` in your global configuration settings, or `data-permalink` in your timer's attributes. Use the former if you only want to add one timer element or if you want all timer elements to have the same permalink. Use the latter if you want to have multiple timer elements with unique permalinks.
 
 `**` The project code and project name can be found in your Harvest Account under Projects while editing the targeted project:
 
