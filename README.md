@@ -25,7 +25,7 @@
 
 ## User Authentication
 
-There is no additional configuration within your application for selecing a Harvest account or user. The user’s browser session is used to find what Harvest user is currently logged in — or, if no Harvest users are logged in, a login form is presented instead of the time tracking form when it is displayed.
+There is no additional configuration within your application for selecting a Harvest account or user. The user’s browser session is used to find what Harvest user is currently logged in — or, if no Harvest users are logged in, a login form is presented instead of the time tracking form when it is displayed.
 
 ## Harvest Project and Task Suggestion
 
