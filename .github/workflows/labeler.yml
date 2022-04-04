@@ -1,0 +1,24 @@
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  issue_creator_job:
+    runs-on: ubuntu-latest
+    name: Label issue and add to project
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Label issue and add to project
+        uses: somnolentPumpkin/issue-card-creator-and-labeler@1.0
+        id: hello
+        with:
+          github-token: ${{ secrets.ACCESS_TOKEN }}
+          actions: '{"data": [
+            {
+              "label": "ecosystem",
+              "project": "46",
+              "repo": "ecosystem-team",
+              "org": "harvesthq"
+            }
+          ]}'
