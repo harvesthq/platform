@@ -26,7 +26,7 @@ This embedded `<iframe>` allows you to embed a Harvest Timer form directly into 
 
 `*` The project code and project name can be found in your Harvest Account under Projects while editing the targeted project:
 
-<img width="685" alt="ProjectNameCode" src="https://user-images.githubusercontent.com/23469053/145894881-6508e91a-74f7-46cc-8012-5092986eea9f.png">
+<img width="700" alt="ProjectNameCode" src="https://user-images.githubusercontent.com/23469053/145894881-6508e91a-74f7-46cc-8012-5092986eea9f.png">
 
 ## Examples
 
@@ -55,11 +55,13 @@ Embedded `<iframe>`:
 
 Timer UI:
 
-<img width="895" alt="Timer" src="https://user-images.githubusercontent.com/23469053/145894036-cf44726b-9984-4fe0-8bc6-82f14b3131b0.png">
+<img width="700" alt="Timer" src="https://user-images.githubusercontent.com/23469053/175380097-648f5b22-e3ac-4b09-91d3-94dfcd99ce0c.png">
+
 
 Timesheet in Harvest with Time Tracked from the Harvest Widget:
 
-<img width="812" alt="Timesheet" src="https://user-images.githubusercontent.com/23469053/145894462-83128160-8845-4405-906d-d746be0131c3.png">
+<img width="700" alt="Timesheet" src="https://user-images.githubusercontent.com/23469053/175379120-76b9e704-56ab-46d6-81ab-80416d1e5fdf.png">
+
 
 #### Harvest Timer form with `chromeless` set as true and `closable` set as false
 
@@ -85,7 +87,8 @@ Embedded `<iframe>`:
 
 Timer UI:
 
-<img width="896" alt="ChromelessTimer" src="https://user-images.githubusercontent.com/23469053/145895919-053ddbe4-67d4-42b6-9cb7-401f7bedd403.png">
+<img width="700" alt="ChromelessTimer" src="https://user-images.githubusercontent.com/23469053/175378810-c24bd688-9b7b-46ac-971a-1ae08dfa6666.png">
+
 
 ## Resizing the Height *(optional)*
 
