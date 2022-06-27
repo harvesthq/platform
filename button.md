@@ -89,11 +89,11 @@ window._harvestPlatformConfig = {
 
 Timer UI:
 
-<img width="509" alt="DataGroup" src="https://user-images.githubusercontent.com/23469053/145631884-3ab87ff7-1711-41b3-8a07-d7a4110935cd.png">
+<img width="500" alt="DataGroup" src="https://user-images.githubusercontent.com/23469053/175624106-c3545d76-22f4-4681-905e-284b1e1b0400.png">
 
 Timesheet in Harvest with Time Tracked from the Harvest Button:
 
-<img width="817" alt="DataGroupTimesheet" src="https://user-images.githubusercontent.com/23469053/145631921-db2fae1a-3a46-4d62-b92f-69e8a405c421.png">
+<img width="500" alt="DataGroupTimesheet" src="https://user-images.githubusercontent.com/23469053/175625194-1ba17ac4-788f-4edf-a706-beeed5858577.png">
 
 Timesheet permalink:
 
@@ -122,7 +122,8 @@ window._harvestPlatformConfig = {
 
 Timer UI:
 
-<img width="508" alt="DataDefault" src="https://user-images.githubusercontent.com/23469053/145632021-e599e602-d3e5-42da-a6f6-4e3556eea115.png">
+<img width="500" alt="DataDefault" src="https://user-images.githubusercontent.com/23469053/175630649-1b81660e-5fcd-44d1-92d8-51533d6c5a28.png">
+
 
 Timesheet permalink:
 
