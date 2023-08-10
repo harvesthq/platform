@@ -10,10 +10,10 @@
   <tbody>
     <tr>
       <td width="50%">
-        <a href="button.md"><img src="assets/button.png" alt="Screenshot of the Harvest Button in action"></a>
+        <a href="button.md"><img src="assets/button.jpg" alt="Screenshot of the Harvest Button in action"></a>
       </td>
       <td width="50%">
-        <a href="widget.md"><img src="assets/widget.png" alt="Screenshot of the Harvest Widget in action"></a>
+        <a href="widget.md"><img src="assets/widget.jpg" alt="Screenshot of the Harvest Widget in action"></a>
       </td>
     </tr>
     <tr>
