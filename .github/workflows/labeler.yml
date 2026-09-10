@@ -8,9 +8,9 @@ jobs:
     name: Label issue and add to project
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e
       - name: Label issue and add to project
-        uses: somnolentPumpkin/issue-card-creator-and-labeler@1.0
+        uses: somnolentPumpkin/issue-card-creator-and-labeler@eaff6ff1212817b2187e87bd232598e1fa1469fe
         id: hello
         with:
           github-token: ${{ secrets.ACCESS_TOKEN }}
